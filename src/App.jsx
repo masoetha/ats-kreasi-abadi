@@ -53,8 +53,8 @@ const INITIAL_FORM = {
 
 // ─── HELPERS ─────────────────────────────────────────────────────────────────
 const EDU_W = { "SMP":12,"SMA / SMK":28,"D1":40,"D2":46,"D3":54,"D4":63,"S1":72,"S2":85,"S3":95 };
-const EXP_W = { "Belum ada pengalaman":8,"< 1 tahun":18,"1 - StLocaleDateString("id-ID",{day:"numeric",month:"short",year:"numeric"}) : "-";
-
+const EXP_W = { "Belum ada pengalaman":8,"< 1 tahun":18,"1 - 2 tahun":36,"3 - 5 tahun":56,"6 - 10 tahun":74,"> 10 tahun":90 };
+const fmtDate = iso => iso ? new Date(iso).toLocaleDateString("id-ID",{day:"numeric",month:"short",year:"numeric"}) : "-";
 const scoreColor = s => s>=80?"text-emerald-600":s>=60?"text-blue-600":s>=40?"text-amber-600":"text-red-500";
 const scoreBg   = s => s>=80?"bg-emerald-50 border-emerald-200":s>=60?"bg-blue-50 border-blue-200":s>=40?"bg-amber-50 border-amber-200":"bg-red-50 border-red-200";
 const scoreBar  = s => s>=80?"bg-emerald-500":s>=60?"bg-blue-500":s>=40?"bg-amber-400":"bg-red-400";
