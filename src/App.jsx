@@ -60,7 +60,7 @@ const scoreBg   = s => s>=80?"bg-emerald-50 border-emerald-200":s>=60?"bg-blue-5
 const scoreBar  = s => s>=80?"bg-emerald-500":s>=60?"bg-blue-500":s>=40?"bg-amber-400":"bg-red-400";
 
 const scoreWithAI = async candidate => {
-  try {"/.netlify/functions/ai-score"
+  try {/.netlify/functions/ai-score
     const r = await fetch("",{
       method:"POST",
       headers:{"Content-Type":"application/json"},
